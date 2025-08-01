@@ -1,0 +1,76 @@
+/*Variaveis css */
+
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: #3c92fa;
+}
+
+/* Estilos gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    width: 100vw;
+}
+
+.cabecalho {
+    background-image: url(assets/Background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.cabecalho__conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 588px;
+    margin: 125px 798px 125px 54px;
+}
+
+.cabecalho__conteudo__texto {
+    color: var(--branco-principal);
+    font-size: 1.75rem;
+    font-family: var(--fonte-principal);
+    width: 85%;
+    margin-bottom: 22px;
+}
+
+.cabecalho__conteudo__combo {
+    width: 348px;
+    margin-bottom: 54px;
+}
+
+.cabecalho__conteudo__butoes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 10px;
+}
+
+.cabecalho__conteudo__butoes__butao {
+    width: 512px;
+    height: 56px;
+    background-color: var(--botao-azul);
+    color: var(--branco-principal);
+    border-radius: 8px;
+    border: none;
+}
+
+.cabecalho__conteudo__aviso {
+    color: var(--cinza-secundario);
+    font-size: 0.75rem;
+}
